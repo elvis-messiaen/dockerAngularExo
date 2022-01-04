@@ -1,4 +1,4 @@
-FROM node:12-alpine3.15
+FROM node:12-alpine3.14
 
 WORKDIR /app
 
@@ -6,6 +6,6 @@ COPY . .
 
 RUN npm install
 
-EXPOSE 3000
+EXPOSE 4200
 
-CMD ["ng", "serve"]
+CMD ["npm", "run","start"]
